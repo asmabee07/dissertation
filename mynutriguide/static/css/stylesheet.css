@@ -1,0 +1,35 @@
+header {
+    background-color: darkblue;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+
+header h1, header h1 a, header h1 a:visited, header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
+
+main {
+    margin-left: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: "Eagle Lake", cursive;
+}
+
+small{
+    color: gray;
+}
+
+.errors{
+    color: red;
+}
+
+.c_img{
+    vertical-align: middle;
+    height: 300px;
+    width: 500px;
+}
+

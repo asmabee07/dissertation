@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Complete Your Profile{% endblock %}
+
+{% block content %}
+    <h2>Hola!, {{ user.get_full_name }} <small>{{ user.username }}</small></h2><br>
+    <h4>Complete Your Profile</h4>
+    <br>
+    <form method="POST">
+        {% csrf_token %}
+        {% for field in cyp %}
+            <p>
+                {{ field.label_tag }}<br>
+                {{ field }}
+                {% if field.help_text %}
+                    <small>{{ field.help_text }}</small>
+                {% endif %}
+            </p>
+        {% endfor %}
+
+        <button type="submit">Submit</button>
+
+{% endblock %}

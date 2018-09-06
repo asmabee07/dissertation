@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}MyNutriGuide{% endblock %}
+
+{% block content %}
+    <br>
+    <h4 align="center">Welcome to MyNutriGuide Application</h4>
+    {% load static %}
+    <img src="{% static 'nutrition.png' %}" class="c_img" alt="Display Image" />
+{% endblock %}

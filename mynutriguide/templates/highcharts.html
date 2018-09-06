@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %}Highcharts{% endblock %}
+
+{% block content %}
+    <h2>Hola!, {{ user.get_full_name }} <small>{{ user.username }}</small></h2><br>
+    <h4>Nutrition Representation of a meal</h4>
+    <br>
+    <div id="container"></div>
+    <script src="https://code.highcharts.com/highcharts.src.js"></script>
+    <script>
+        Highcharts.chart('container', {
+            chart: {
+                type: 'column'
+            },
+            title: {
+                text: 'Nutrition value of Mutter Paneer'
+            },
+            xAxis: {
+                categories: ['Vitamin A', 'Vitamin C', 'Calcium', 'Iron']
+            },
+            series: [{
+                name: '(%)Percentage',
+                data: [10, 20, 15, 10],
+
+            }],
+        });
+    </script>
+{% endblock %}

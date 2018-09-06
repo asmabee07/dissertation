@@ -1,0 +1,4 @@
+converting height(ft to meter)
+Ht(meter) = H(ft) / 3.68
+
+

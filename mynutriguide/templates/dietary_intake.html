@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block title %}Dietary Intake{% endblock %}
+
+{% block content %}
+    <h2>Dietary Intake</h2>
+<!--
+    <ul>
+        {% for food_item in food_items %}
+            <li><b>{{ forloop.counter }}: </b>{{ food_item.food_name }}</li>
+        {% endfor %}
+    </ul>
+    <br>
+-->
+    <form action="" method="POST">
+    <select name="dropdown">
+        {% for food_item in food_items %}
+            <option value="{{ forloop.counter }}"> {{ food_item.food_name }}</option>
+        {% endfor %}
+    </select>
+    </form>
+
+{% endblock %}
